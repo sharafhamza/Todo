@@ -1,0 +1,71 @@
+body {
+  background: #12181c;
+  color: white;
+  font-family: sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+h1 {
+  font-size: 28px;
+  text-align: center;
+}
+.todo-box {
+  text-align: center;
+  padding-top: 14px;
+}
+input {
+  background: #1e272e;
+  outline: 0;
+  border: 2px solid #808e9b;
+  color: white;
+  width: 230px;
+  height: 30px;
+  border-radius: 8px;
+  padding: 5px;
+  font-size: 20px;
+}
+.add {
+  background-color: white;
+  margin-left: 4px;
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: 700;
+  border: 0;
+  border-radius: 8px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+.del-btn {
+  cursor: pointer;
+  background: #f53b57;
+  padding: 6px 10px;
+  height: 35px;
+  display: inline-block;
+  border: 0;
+  color: white;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.edit-btn {
+  cursor: pointer;
+  background: #37404a;
+  padding: 6px 12px;
+  height: 35px;
+  display: inline-block;
+  border: 0;
+  color: white;
+  font-size: 14px;
+  border-radius: 4px;
+}
+.todo-main {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+.div2 {
+  display: flex;
+  gap: 10px;
+}
