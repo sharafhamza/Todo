@@ -12,9 +12,10 @@ button.addEventListener("click", () => {
 function display() {
   ul.innerHTML = "";
   task.map((item) => {
-    ul.innerHTML += `<li>${item} <button class="del-btn">Delete</button></li>`;
+    ul.innerHTML += `<li>${item} <button class="edit-btn">Edit</button> <button class="del-btn">Delete</button> </li>`;
   });
 
+  editElement();
   delElement();
 }
 
@@ -26,6 +27,17 @@ function delElement() {
     item.addEventListener("click", () => {
       task.splice(index, 1);
       display();
+    });
+  });
+}
+
+function editElement() {
+  const editElement = document.querySelectorAll(".edit-btn");
+  const editArr = Array.from(editElement);
+
+  editArr.map((item, index) => {
+    item.addEventListener("click", () => {
+      console.log("hello");
     });
   });
 }
