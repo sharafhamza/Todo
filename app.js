@@ -15,12 +15,17 @@ function display() {
     ul.innerHTML += `<li>${item} <button class="del-btn">Delete</button></li>`;
   });
 
+  delElement();
+}
+
+function delElement() {
   const delBtn = document.querySelectorAll(".del-btn");
   const delBtnArr = Array.from(delBtn);
 
   delBtnArr.map((item, index) => {
     item.addEventListener("click", () => {
       task.splice(index, 1);
+      display();
     });
   });
 }
